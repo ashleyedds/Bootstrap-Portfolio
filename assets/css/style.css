@@ -56,8 +56,7 @@ h2 {
 }
 
 .selfie {
-    height: 200px;
-    width: 200px;
+    width: 50%;
     float: left;
     padding: 10px;
 }
@@ -135,11 +134,8 @@ h5 {
 
 .portimgs {
     position: relative;
-    padding: 20px;
-}
-
-.portimg1, .portimg3, .portimg5 {
-    padding-left: 60px;
+    padding: 40px;
+    width: 100%;
 }
 
 .portlabel {
@@ -149,17 +145,17 @@ h5 {
     text-align: center;
     color: #e6e7e8;
     font-family: "Arial", "Helvetica Neue", "Helvetica", "san serif";
-    width: 203px;
+    width: 68%;
 }
 
 .label1, .label3, .label5 {
     bottom: 25%;
-    left: 28%;
+    left: 16%
 }
 
 .label2, .label4 {
     bottom: 25%;
-    right: 31%;
+    right: 16%;
 }
 
 .portlabel:hover {
@@ -167,6 +163,13 @@ h5 {
 }
 
 /*Media query*/
+
+@media (max-width: 1250px){
+    .contact {
+        width: 100%;
+        margin-left: 0;
+    }
+    }
 
 @media (max-width: 990px) {
     .navbar-header {
@@ -193,5 +196,27 @@ h5 {
         padding-top: 10px;
         padding-bottom: 10px;
     }
-}
+    .selfie {
+        width: 100%;
+        float: none;
+        margin: auto;
+    }
 
+    .portimgs {
+        width: 100%;
+    }
+
+    .portlabel {
+        max-width: 68%;
+    }
+
+    .label2, .label4 {
+        right: 16%
+    }
+
+    .label1, .label3, .label5 {
+        left: 16%;
+    }
+
+         
+}
